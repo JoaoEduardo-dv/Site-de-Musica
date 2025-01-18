@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body{
+    display: flex;
+    flex-direction: row
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    top: 0;
+    background-color: black;
+}
+
+
+
+/* Area de Menu do site */
+
+
+
+.divum{
+    background-color: black;
+    width: 350px;
+    height: 100%;
+    border-right: 1px solid rgb(59, 59, 59);
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.linksNavegation{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0;
+    color: #fff;
+    font-size: 15pt;
+    font-family: "DM Sans";
+    width: 100%;
+    height: 50px;
+}
+
+.primLink{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    width: 90%;
+    height: 50px;
+}
+
+button{
+    background-color: black;
+    border: none;
+}
+
+.hoverLinks:hover{
+    background-color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+.elementLink{
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.hr{
+    background-color: rgb(59, 59, 59);
+    width: 90%;
+    height: 1px;
+    border: none;
+}
+
+
+/* Barra de Navegações */
+
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(59, 59, 59);
+}
+
+.barPesquisa{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barraPesquisaTudo{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.inicioBarPesquisa{
+    width: 20%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid rgb(59, 59, 59);
+    border-right: none;
+}
+
+.lupaBarPesquisa{
+    color: rgb(105, 105, 105);
+}
+
+#barraDePesquisa{
+    width: 80%;
+    border: 2px solid rgb(59, 59, 59);
+    border-left: none;
+    background-color: transparent;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#barraDePesquisa:focus{
+    outline: none;
+    border: 3px solid rgb(59, 59, 59);
+}
