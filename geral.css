@@ -2,7 +2,7 @@
 
 body{
     display: flex;
-    flex-direction: row
+    flex-direction: row;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -120,7 +120,7 @@ nav{
     color: rgb(105, 105, 105);
 }
 
-#barraDePesquisa{
+.barraDePesquisa{
     width: 80%;
     border: 2px solid rgb(59, 59, 59);
     border-left: none;
@@ -131,7 +131,7 @@ nav{
     color: #fff;
 }
 
-#barraDePesquisa:focus{
+.barraDePesquisa:focus{
     outline: none;
     border: 3px solid rgb(59, 59, 59);
 }
