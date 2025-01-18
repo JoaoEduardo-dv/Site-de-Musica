@@ -7,7 +7,13 @@ body{
     height: 100vh;
     margin: 0;
     top: 0;
-    background-color: black;
+    background: linear-gradient(to bottom, black, rgb(0, 0, 39));
+}
+
+.bodyParcial{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 
@@ -38,7 +44,7 @@ body{
     border-radius: 5px;
     margin: 0;
     color: #fff;
-    font-size: 15pt;
+    font-size: 1rem;
     font-family: "DM Sans";
     width: 100%;
     height: 50px;
@@ -134,4 +140,34 @@ nav{
 .barraDePesquisa:focus{
     outline: none;
     border: 3px solid rgb(59, 59, 59);
+}
+
+@media screen and (max-width: 933px) {
+    .divum{
+        width: 100px;
+        /* background-color: red; */
+    }
+    .linksNavegation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+        font-size: 8pt;
+        margin: 0;
+    }
+    .links a{
+        height: 80px;
+    }
+    .elementLink{
+        margin-right: 0px;
+        margin-left: 0px;
+        font-size: 15pt;
+    }
+}
+
+@media screen and (min-width: 934px) {
+    .divum{
+        width: 350px;
+        /* background-color: aqua; */
+    }
 }
