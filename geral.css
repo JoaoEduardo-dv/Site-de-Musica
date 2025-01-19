@@ -8,12 +8,35 @@ body{
     margin: 0;
     top: 0;
     background: linear-gradient(to bottom, black, rgb(0, 0, 39));
+    overflow-x: hidden;
+    font-family: "DM Sans";
+    margin-left: -8px;
 }
 
 .bodyParcial{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.nada{
+    width: 250px;
+    height: 100%;
+}
+
+.nadadois{
+    width: 250px;
+    height: 100%;
+}
+
+.nadanav{
+    width: 100%;
+    height: 70px;
+}
+
+.nadanavdois{
+    width: 100%;
+    height: 70px;
 }
 
 
@@ -24,9 +47,10 @@ body{
 
 .divum{
     background-color: black;
-    width: 300px;
+    width: 250px;
     height: 100%;
     border-right: 1px solid rgb(59, 59, 59);
+    position: fixed;
 }
 
 .links{
@@ -94,6 +118,8 @@ nav{
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgb(59, 59, 59);
+    border-left: 1px solid rgb(59, 59, 59);
+    position: fixed;
 }
 
 .barPesquisa{
@@ -142,6 +168,12 @@ nav{
     border: 3px solid rgb(59, 59, 59);
 }
 
+
+
+/*Media queries*/
+
+
+
 @media screen and (max-width: 933px) {
     .divum{
         width: 100px;
@@ -162,10 +194,19 @@ nav{
         margin-left: 0px;
         font-size: 15pt;
     }
+    .nada{
+        width: 100px;
+        height: 100%;
+    }
+    
+    .nadadois{
+        width: 100px;
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 934px) {
     .divum{
-        width: 300px;
+        width: 250px;
     }
 }
