@@ -6,7 +6,8 @@ function trocaCor(){
     }
 }
 
-// function tc(){
-//     document.getElementById("te").style.color = "blue";
-//     alert("test");
+// var audio = document.getElementsByClassName("audio").style.display == "none";
+
+// function tocarMusic(){
+
 // }

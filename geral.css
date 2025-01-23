@@ -128,6 +128,7 @@ nav{
     border-bottom: 1px solid rgb(59, 59, 59);
     border-left: 1px solid rgb(59, 59, 59);
     position: fixed;
+    z-index: 100;
 }
 
 .barPesquisa{

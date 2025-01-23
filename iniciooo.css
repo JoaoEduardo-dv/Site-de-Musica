@@ -2,7 +2,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* background-color: brown; */
 }
 
 .estilosMusicais{ 
@@ -12,7 +11,6 @@
     overflow: auto;
     scrollbar-width: thin;
     scrollbar-color: rgb(255, 255, 255) #00000000; 
-    /* background-color: aqua; */
 }
 
 .musicas-estilos{
@@ -64,13 +62,12 @@
     display: flex;
     flex-direction: row; 
     margin-bottom: 30px;
-    /* background-color: aqua; */
 }
 
-.musicas:hover{
+.musicas{
     overflow: auto;
     scrollbar-width: thin;
-    scrollbar-color: rgb(255, 255, 255) #00000000;
+    scrollbar-color: rgb(59, 59, 59) #00000000;
 }
 
 .musica{
@@ -81,28 +78,35 @@
     height: 300px;
     background-color: rgba(59, 59, 59, 0.352);
     border-radius: 8px;
+    margin: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.musica:hover{
+    cursor: pointer;
 }
 
 .fotomusicas{
     width: 150px;
+    height: 150px;
     margin-top: 15px;
 }
 
 .estilodasmusicas{
     width: 150px;
-}
-
-.estiloo{
-    color: white;
-    font-size: 16pt;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .nomemusica{
-    color: rgb(197, 197, 197);
+    color: #fff;
 }
 
 .nomecantor{
-    color: rgb(197, 197, 197);
+    color: rgb(152, 152, 152);
     margin-top: -15px;
 }
 
@@ -118,6 +122,11 @@
     text-decoration: none;
     border-radius: 8px;
     margin: 20px;
+}
+
+.audios{
+    width: 150px;
+    height: 20px;
 }
 
 @media screen and (max-width: 933px) {
