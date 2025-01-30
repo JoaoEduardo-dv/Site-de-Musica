@@ -1,0 +1,151 @@
+/* .carrossel{
+    /* margin: 0 auto; margem para centralizar o elemento */
+    /* width: 50vw; largura do elemento */
+    /* height: 400px; altura do elemento */
+    /* overflow: hidden; ocultar conteúdo que ultrapassa o tamanho do elemento */
+    /* margin-top: 2vh; margem superior */
+/* } */
+
+/* .radios{ */
+    /* width: 400%; largura do elemento */
+    /* height: 400px; altura do elemento */
+    /* display: flex; Deixar flexível */
+/* } */
+/* 
+.radios input, .navigation-auto div{
+    display: none;
+}
+
+.slider{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slider img{
+    width: 50vw;
+}
+
+.manual-navegation{
+    position: absolute;
+    width: 50vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 50vw;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .out-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .out-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .out-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .out-btn4{
+    background-color: #fff;
+} */
+
+.carrossel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.div-img img{
+    width: 50vw;
+    height: auto;
+}
+
+.imgs{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* display: none; */
+}
+
+
+
+.div-img{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.div-img img{
+    width: 50vw;
+}
+
+#radio1:checked ~ .prim-img{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .prim-img{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .prim-img{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .prim-img{
+    margin-left: -75%;
+}
