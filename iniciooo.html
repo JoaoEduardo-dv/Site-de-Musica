@@ -142,6 +142,20 @@
                 </div>
             </div> -->
 
+
+            <div class="carrosselcenter">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item"><img src="img-musicas/img-carrossel/slide 2.png" alt=""></div>
+                        <div class="carousel-item"><img src="img-musicas/img-carrossel/slide 1.png" alt=""></div>
+                        <div class="carousel-item"><img src="img-musicas/img-carrossel/slide 2.png" alt=""></div>
+                    </div>
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+            </div>
+
+
             <div class="musicasgeral">
                 <div class="letrero">
                     <h1>Forró</h1>
@@ -790,6 +804,35 @@
 
         </div>
     </div>
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const items = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let index = 0;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            index = index > 0 ? index - 1 : items.length - 1;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            index = index < items.length - 1 ? index + 1 : 0;
+            updateCarousel();
+        });
+
+        let startX = 0;
+        track.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; });
+        track.addEventListener('touchend', (e) => {
+            let endX = e.changedTouches[0].clientX;
+            if (startX - endX > 50) nextBtn.click();
+            if (endX - startX > 50) prevBtn.click();
+        });
+    </script>
 </body>
 
 </html>

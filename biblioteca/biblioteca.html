@@ -14,20 +14,20 @@
 </head>
 
 <body>
-    <div class="divum">
+    <div class="divum" id="menu">
 
         <div class="links">
-            <div class="linksNavegation primLink"></div>
-            <a href="../iniciooo.html"><button class="linksNavegation hoverLinks" onclick="trocaCor()"><i
-                        class="fa-solid elementLink fa-house"></i> Início</button>"</a>
-            <a href="../recomendados/recomendados.html"><button class="linksNavegation hoverLinks"
-                    onclick="trocaCor()"><i class="fa-solid elementLink fa-thumbs-up"></i> Recomendados</button></a>
-            <a href="biblioteca.html"><button class="linksNavegation hoverLinks" onclick="trocaCor()"><i
-                        class="fa-solid elementLink fa-icons"></i> Biblioteca</button></a>
-
+            <div class="linksNavegation primLink"><img src="../img-musicas/simbolo canva 2.png" alt="" class="logodivum">InspiraSom</div>
+            <a href="../iniciooo.html"><button class="linksNavegation hoverLinks" onclick="trocaCor()"><i class="fa-solid elementLink fa-house"></i> Início</button>"</a>
+            <a href="../recomendados/recomendados.html"><button class="linksNavegation hoverLinks" onclick="trocaCor()"><i class="fa-solid elementLink fa-thumbs-up"></i> Recomendados</button></a>
+            <a href="biblioteca.html"><button class="linksNavegation hoverLinks" onclick="trocaCor()"><i class="fa-solid elementLink fa-icons"></i> Biblioteca</button></a>
         </div>
 
         <hr class="hr">
+
+        <div class="div-login">
+            <a href="../login.html" class="link-login"><div class="button-login">Login</div></a>
+        </div>
 
     </div>
 
@@ -36,17 +36,20 @@
     <div class="bodyParcial">
         <nav>
             <div class="barPesquisa">
+                <button type="menu" class="menu" onclick="botaoMenu()"><i class="fa-solid fa-bars" style="color: #fff; margin-right: 30px;"></i></button>
                 <div class="barraPesquisaTudo">
                     <div class="inicioBarPesquisa"><i class="fa-solid lupaBarPesquisa fa-magnifying-glass"></i></div>
                     <input type="text" name="barra de pesquisa" class="barraDePesquisa" placeholder="Pesquisar">
                 </div>
             </div>
             <div class="perfil">
-
+                <a href="../login.html" class="link-login-nav"><div class="button-login-nav">Login</div></a>
             </div>
         </nav>
 
-        <div class="nadanav"><div class="nadanavdois"></div></div>
+        <div class="nadanav">
+            <div class="nadanavdois"></div>
+        </div>
 
     </div>
 </body>

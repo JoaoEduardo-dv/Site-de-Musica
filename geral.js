@@ -39,7 +39,8 @@ function botaoMenu() {
     if (window.innerWidth <= 600) { // Garante que a lógica só funcione para telas pequenas
         if (menu.style.display === "none" || menu.style.display === "") {
             menu.style.display = "block"; // Mostra o menu
-        } else {
+        }
+        else {
             menu.style.display = "none"; // Esconde o menu
         }
         // if(menunada.style.display === "none" || menunada.style.display === ""){
