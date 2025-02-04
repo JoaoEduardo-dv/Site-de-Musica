@@ -54,6 +54,7 @@ body{
     height: 100%;
     border-right: 1px solid rgb(59, 59, 59);
     position: fixed;
+    z-index: 100;
 }
 
 .logodivum{
@@ -235,6 +236,10 @@ nav{
     border-radius: 18px;
 }
 
+.menu{
+    display: none;
+}
+
 /*Media queries*/
 
 
@@ -280,5 +285,20 @@ nav{
     }
     .link-login{
         background-color: rgba(100, 100, 100, 0.275);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .divum{
+        display: none;
+    }
+    .nada{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu:hover{
+        cursor: pointer;
     }
 }

@@ -29,3 +29,24 @@ function nextImage(){
 
     document.getElementById("radio"+count).checked = true;
 }
+
+// menu
+
+function botaoMenu() {
+    const menu = document.getElementById("menu");
+    // const menunada = document.getElementById("menunada");
+
+    if (window.innerWidth <= 600) { // Garante que a lógica só funcione para telas pequenas
+        if (menu.style.display === "none" || menu.style.display === "") {
+            menu.style.display = "block"; // Mostra o menu
+        } else {
+            menu.style.display = "none"; // Esconde o menu
+        }
+        // if(menunada.style.display === "none" || menunada.style.display === ""){
+        //     menunada.style.display = "block";
+        // }
+        // else{
+        //     menunada.style.display = "none";
+        // }
+    }
+}
