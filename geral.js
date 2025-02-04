@@ -6,35 +6,28 @@ function trocaCor(){
     }
 }
 
-// var audio = document.getElementsByClassName("audio").style.display == "none";
-
-// function tocarMusic(){
-
-// }
-
 // carrosel
 
-let count = 1;
-document.getElementById("radio1").checked = true;
+// let count = 1;
+// document.getElementById("radio1").checked = true;
 
-setInterval(function(){
-    nextImage();
-}, 5000)
+// setInterval(function(){
+//     nextImage();
+// }, 5000)
 
-function nextImage(){
-    count++
-    if(count>4){
-        count = 1;
-    }
+// function nextImage(){
+//     count++
+//     if(count>4){
+//         count = 1;
+//     }
 
-    document.getElementById("radio"+count).checked = true;
-}
+//     document.getElementById("radio"+count).checked = true;
+// }
 
 // menu
 
 function botaoMenu() {
     const menu = document.getElementById("menu");
-    // const menunada = document.getElementById("menunada");
 
     if (window.innerWidth <= 600) { // Garante que a lógica só funcione para telas pequenas
         if (menu.style.display === "none" || menu.style.display === "") {
@@ -43,11 +36,5 @@ function botaoMenu() {
         else {
             menu.style.display = "none"; // Esconde o menu
         }
-        // if(menunada.style.display === "none" || menunada.style.display === ""){
-        //     menunada.style.display = "block";
-        // }
-        // else{
-        //     menunada.style.display = "none";
-        // }
     }
 }
