@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="img-musicas/simbolo canva 2.png" type="image/x-icon" id="icone">
     <link rel="stylesheet" href="carrossel-inicio.css">
     <link rel="stylesheet" href="/tema-claro.css">
+    <link rel="stylesheet" href="tema-claro-inicio.css">
 </head>
 
 <body>
@@ -69,12 +70,10 @@
                 <!--tema-->
                 
                 <div class="toggle-container">
-                    <span>🌞</span>
                     <label class="toggle-switch">
                         <input type="checkbox" id="modeToggle">
                         <span class="slider"></span>
                     </label>
-                    <span>🌙</span>
                 </div>
             </div>
         </nav>
@@ -814,6 +813,30 @@
             if (startX - endX > 50) nextBtn.click();
             if (endX - startX > 50) prevBtn.click();
         });
+
+
+        //tema
+
+
+        const toggleSwitch = document.getElementById('modeToggle');
+        const body = document.body;
+
+        function setThemeBasedOnTime() {
+            const hour = new Date().getHours();
+            if (hour >= 18 || hour < 6) {
+                body.classList.add('claro');
+                toggleSwitch.checked = true;
+            } else {
+                body.classList.remove('claro');
+                toggleSwitch.checked = false;
+            }
+        }
+
+        toggleSwitch.addEventListener('change', () => {
+            body.classList.toggle('claro');
+        });
+
+        setThemeBasedOnTime();
     </script>
     <script src="/geral.js"></script>
 </body>

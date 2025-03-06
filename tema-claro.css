@@ -1,12 +1,92 @@
-body .claro {
-    /* background: linear-gradient(to top left, #ffffff, rgb(118, 221, 255)); */
-    background-color: #ffffff;
-}
-
 .claro .divum {
-    background-color: rgb(209, 209, 209) !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-right: 1px solid rgb(0, 0, 0);
 }
 
 .claro .bodyParcial {
     scrollbar-color: #00000000 rgb(255, 255, 255);
+    background: linear-gradient(to top left, #ffffff, rgb(227, 248, 255));
+}
+
+.claro .linksNavegation{
+    color: #000000;
+    background-color: #fff;
+}
+
+.claro button{
+    background-color: black;
+}
+
+.claro .hoverLinks:hover{
+    background-color: rgb(100, 100, 100);
+}
+
+.claro .hr{
+    background-color: rgb(59, 59, 59);
+}
+
+.claro nav{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+}
+
+.claro .inicioBarPesquisa{
+    border: 2px solid rgb(59, 59, 59);
+    border-right: none;
+}
+
+.claro .lupaBarPesquisa{
+    color: rgb(105, 105, 105);
+}
+
+.claro .barraDePesquisa {
+    border: 2px solid rgb(59, 59, 59);
+    color: #000000;
+    border-left: none;
+}
+
+.claro .barraDePesquisa:focus {
+    border: 3px solid rgb(59, 59, 59);
+}
+
+.claro .button-login-nav{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.link-login:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+.claro .button-login{
+    background-color: #000000;
+    color: #fff;
+}
+
+@media screen and (min-width: 934px) {
+    .claro .link-login {
+        background-color: rgba(100, 100, 100, 0.275);
+    }
+}
+
+.claro .carousel {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.claro .carousel-btn {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+.claro .slider {
+    background-color: #ccc;
+}
+
+.claro .slider:before {
+    background-color: white;
+}
+
+.claro input:checked + .slider {
+    background-color: #444;
 }

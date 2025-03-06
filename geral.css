@@ -378,11 +378,16 @@ nav {
 /*tema*/
 
 
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
 .toggle-container {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-left: 20px;
 }
 .toggle-switch {
     position: relative;

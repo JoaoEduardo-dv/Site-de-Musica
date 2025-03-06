@@ -1,0 +1,24 @@
+.claro .letrero{
+    color: #000;
+}
+
+.claro .nomemusica{
+    color: #000;
+}
+
+.claro .nomecantor{
+    color: rgba(59, 59, 59, 0.352);
+}
+
+.claro .estilos{
+    background-color: #aaaaaa73;
+    color: #000;
+}
+
+.claro .estilosMusicais{
+    scrollbar-color: rgb(92, 92, 92) #ffffff00; 
+}
+
+.claro .musica{
+    background-color: #e7e7e7;
+}

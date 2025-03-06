@@ -38,27 +38,3 @@ function botaoMenu() {
         }
     }
 }
-
-
-/*tema*/
-
-
-const toggleSwitch = document.getElementById('modeToggle');
-const body = document.body;
-
-function setThemeBasedOnTime() {
-    const hour = new Date().getHours();
-    if (hour >= 18 || hour < 6) {
-        body.classList.add('claro');
-        toggleSwitch.checked = true;
-    } else {
-        body.classList.remove('claro');
-        toggleSwitch.checked = false;
-    }
-}
-
-toggleSwitch.addEventListener('change', () => {
-    body.classList.toggle('claro');
-});
-
-setThemeBasedOnTime();

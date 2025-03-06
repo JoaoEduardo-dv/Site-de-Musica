@@ -10,7 +10,7 @@
     flex-direction: row;
     overflow: auto;
     scrollbar-width: thin;
-    scrollbar-color: rgb(255, 255, 255) #00000000; 
+    scrollbar-color: rgb(255, 255, 255) #ffffff00; 
 }
 
 .musicas-estilos{
