@@ -1,0 +1,12 @@
+body .claro {
+    /* background: linear-gradient(to top left, #ffffff, rgb(118, 221, 255)); */
+    background-color: #ffffff;
+}
+
+.claro .divum {
+    background-color: rgb(209, 209, 209) !important;
+}
+
+.claro .bodyParcial {
+    scrollbar-color: #00000000 rgb(255, 255, 255);
+}
