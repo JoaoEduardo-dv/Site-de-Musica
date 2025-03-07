@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="recomendados.css">
     <link rel="stylesheet" href="../geral.css">
+    <link rel="stylesheet" href="/tema-claro.css">
     <script src="geral.js"></script>
 </head>
 
@@ -44,6 +45,15 @@
             </div>
             <div class="perfil">
                 <a href="../login.html" class="link-login-nav"><div class="button-login-nav">Login</div></a>
+                
+                <!--tema-->
+                
+                <div class="toggle-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="modeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
         </nav>
 
@@ -52,6 +62,30 @@
         </div>
 
     </div>
+    <script>
+        //tema
+
+
+        const toggleSwitch = document.getElementById('modeToggle');
+        const body = document.body;
+
+        function setThemeBasedOnTime() {
+            const hour = new Date().getHours();
+            if (hour >= 18 || hour < 6) {
+                body.classList.remove('claro');
+                toggleSwitch.checked = true;
+            } else {
+                body.classList.add('claro');
+                toggleSwitch.checked = false;
+            }
+        }
+
+        toggleSwitch.addEventListener('change', () => {
+            body.classList.toggle('claro');
+        });
+
+        setThemeBasedOnTime();
+    </script>
 </body>
 
 </html>
