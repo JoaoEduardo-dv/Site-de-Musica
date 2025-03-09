@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="carrossel-inicio.css">
     <link rel="stylesheet" href="/tema-claro.css">
     <link rel="stylesheet" href="tema-claro-inicio.css">
+    <!-- <script type="text/javascript" href="geral.js"></script> -->
 </head>
 
 <body>
@@ -38,7 +39,7 @@
             <a href="iniciooo.html"><button class="linksNavegation hoverLinks" onclick="trocaCor()"><i
                         class="fa-solid elementLink fa-house"></i> Início</button>"</a>
             <a href="recomendados/recomendados.html"><button class="linksNavegation hoverLinks" onclick="trocaCor()"><i
-                        class="fa-solid elementLink fa-thumbs-up"></i> Recomendados</button></a>
+                        class="fa-solid elementLink fa-thumbs-up"></i> Explorar</button></a>
             <a href="biblioteca/biblioteca.html"><button class="linksNavegation hoverLinks" onclick="trocaCor()"><i
                         class="fa-solid elementLink fa-icons"></i> Biblioteca</button></a>
         </div>
@@ -58,7 +59,7 @@
     <div class="bodyParcial">
         <nav>
             <div class="barPesquisa">
-                <button type="menu" class="menu" onclick="botaoMenu()"><i class="fa-solid fa-bars" style="color: #fff; margin-right: 30px;"></i></button>
+                <button type="menu" class="menu" onclick="botaoMenu()"><i class="fa-solid fa-bars barhambur"></i></button>
                 <div class="barraPesquisaTudo">
                     <div class="inicioBarPesquisa"><i class="fa-solid lupaBarPesquisa fa-magnifying-glass"></i></div>
                     <input type="text" name="barra de pesquisa" class="barraDePesquisa" placeholder="Pesquisar">
@@ -138,7 +139,7 @@
             <!-- musicas -->
 
             <div class="musicasgeral">
-                <div class="letrero">
+                <div class="letrero" id="forro">
                     <h1>Forró</h1>
                 </div>
                 <div class="musicas forro">
@@ -840,8 +841,15 @@
         });
 
         setThemeBasedOnTime();
+
+        //Botão recomendados
+
+        document.getElementById('meuBotao').addEventListener('click', function() {
+            const div = document.getElementById('forro');
+            div.scrollIntoView({ behavior: 'smooth' });
+        });
     </script>
-    <script src="/geral.js"></script>
+    <script src="geral.js"></script>
 </body>
 
 </html>

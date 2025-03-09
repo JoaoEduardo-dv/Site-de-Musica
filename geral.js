@@ -38,3 +38,5 @@ function botaoMenu() {
         }
     }
 }
+
+window.alert("ola")

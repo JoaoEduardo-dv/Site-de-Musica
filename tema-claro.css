@@ -90,3 +90,11 @@
 .claro input:checked + .slider {
     background-color: #444;
 }
+
+.claro .menu{
+    background-color: #fff;
+}
+
+.claro .barhambur{
+    color: #000000;
+}

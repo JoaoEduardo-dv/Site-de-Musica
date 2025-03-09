@@ -238,6 +238,7 @@ nav {
 
 .menu {
     display: none;
+    margin-right: 30px;
 }
 
 .divum {
@@ -313,6 +314,15 @@ nav {
 
     .menu:hover {
         cursor: pointer;
+    }
+
+    .barhambur{
+        color: #fff;
+    }
+}
+@media screen and (min-width: 601px){
+    .divum{
+        display: block;
     }
 }
 
